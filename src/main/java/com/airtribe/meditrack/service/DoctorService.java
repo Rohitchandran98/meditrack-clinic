@@ -25,7 +25,7 @@ public class DoctorService {
         String id = IdGenerator.getInstance().nextDoctorId();
         Doctor doc = new Doctor(id, name, age, phone, email, specialization, consultationFee);
         store.save(doc);
-        System.out.println("  [+] Doctor added: " + doc.getDescription());
+        System.out.println("  Doctor added: " + doc.getDescription());
         return doc;
     }
 
@@ -35,8 +35,8 @@ public class DoctorService {
 
     public boolean deleteDoctor(String id) {
         boolean removed = store.delete(id);
-        if (removed) System.out.println("  [-] Doctor " + id + " removed.");
-        else          System.out.println("  [!] Doctor " + id + " not found.");
+        if (removed) System.out.println("  Doctor " + id + " removed.");
+        else          System.out.println("  Doctor " + id + " not found.");
         return removed;
     }
 

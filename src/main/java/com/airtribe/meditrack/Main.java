@@ -483,14 +483,14 @@ public class Main {
     }
 
     private static void loadPersistedData() {
-        System.out.println("[Main] --loadData flag detected. Loading CSV data...");
+        System.out.println("--loadData flag detected. Loading CSV data...");
         loadFromCSV();
     }
 
     // ----- seed data -----
 
     private static void seedSampleData() {
-        System.out.println("[Main] Loading sample data...");
+        System.out.println("Loading sample data...");
         try {
             Doctor d1 = doctorService.addDoctor("Anjali Sharma", 42, "9876543210",
                     "anjali@hospital.com", Specialization.CARDIOLOGIST, 1500);
@@ -517,9 +517,9 @@ public class Main {
             billingService.generateBill(a2, BillingService.SENIOR, "SENIOR");
 
         } catch (InvalidDataException e) {
-            System.out.println("[Seed] Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
-        System.out.println("[Main] Sample data ready.\n");
+        System.out.println("Sample data ready.\n");
     }
 
     // ----- input helpers -----

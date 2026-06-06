@@ -32,7 +32,7 @@ public class AppointmentService {
     public void addObserver(AppointmentObserver observer) { observers.add(observer); }
 
     private void notifyCreated(Appointment a) {
-        String msg = "[NOTIFY] Appointment " + a.getAppointmentId()
+        String msg = "Appointment " + a.getAppointmentId()
                 + " created for " + a.getPatient().getName()
                 + " with Dr. " + a.getDoctor().getName()
                 + " on " + a.getDateTime().format(Appointment.FORMATTER);
@@ -42,14 +42,14 @@ public class AppointmentService {
     }
 
     private void notifyCancelled(Appointment a) {
-        String msg = "[NOTIFY] Appointment " + a.getAppointmentId() + " has been CANCELLED.";
+        String msg = "Appointment " + a.getAppointmentId() + " has been CANCELLED.";
         a.addNotification(msg);
         observers.forEach(o -> o.onAppointmentCancelled(a));
         System.out.println("  " + msg);
     }
 
     private void notifyCompleted(Appointment a) {
-        String msg = "[NOTIFY] Appointment " + a.getAppointmentId() + " marked as COMPLETED.";
+        String msg = "Appointment " + a.getAppointmentId() + " marked as COMPLETED.";
         a.addNotification(msg);
         observers.forEach(o -> o.onAppointmentCompleted(a));
         System.out.println("  " + msg);

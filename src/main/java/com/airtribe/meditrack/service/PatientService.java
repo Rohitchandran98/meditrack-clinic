@@ -25,7 +25,7 @@ public class PatientService {
         String id = IdGenerator.getInstance().nextPatientId();
         Patient pat = new Patient(id, name, age, phone, email, bloodGroup, address);
         store.save(pat);
-        System.out.println("  [+] Patient added: " + pat.getDescription());
+        System.out.println("  Patient added: " + pat.getDescription());
         return pat;
     }
 
@@ -36,8 +36,8 @@ public class PatientService {
     public boolean deletePatient(String id) {
         boolean removed = store.delete(id);
         System.out.println(removed
-                ? "  [-] Patient " + id + " removed."
-                : "  [!] Patient " + id + " not found.");
+                ? "  Patient " + id + " removed."
+                : "  Patient " + id + " not found.");
         return removed;
     }
 

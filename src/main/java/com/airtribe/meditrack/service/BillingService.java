@@ -52,7 +52,7 @@ public class BillingService {
         bill.setBillType(type);
         store.save(bill);
 
-        System.out.println("  [+] Bill generated: " + bill);
+        System.out.println("  Bill generated: " + bill);
         return bill;
     }
 
@@ -91,7 +91,7 @@ public class BillingService {
     public void processPayment(String billId) {
         store.findById(billId).ifPresentOrElse(
                 bill -> { bill.processPayment(); bill.printPaymentSummary(); },
-                ()   -> System.out.println("  [!] Bill not found: " + billId));
+                ()   -> System.out.println("  Bill not found: " + billId));
     }
 
     public DataStore<Bill> getStore() { return store; }
