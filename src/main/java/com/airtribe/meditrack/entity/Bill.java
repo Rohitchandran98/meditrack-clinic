@@ -58,7 +58,7 @@ public class Bill implements Payable, Serializable {
     /** Polymorphic bill generation — subclasses can override for specialised billing. */
     public String generateBill() {
         return String.format(
-                "%n====== BILL ======%n" +
+                "%nBill%n" +
                 "Bill ID    : %s%n" +
                 "Type       : %s%n" +
                 "Patient    : %s%n" +
@@ -68,8 +68,7 @@ public class Bill implements Payable, Serializable {
                 "Tax (%.0f%%): ₹%.2f%n" +
                 "Discount   : ₹%.2f%n" +
                 "TOTAL      : ₹%.2f%n" +
-                "Status     : %s%n" +
-                "==================",
+                "Status     : %s",
                 billId, billType,
                 appointment.getPatient().getName(),
                 appointment.getDoctor().getName(),

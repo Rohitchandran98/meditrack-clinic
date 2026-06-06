@@ -18,9 +18,7 @@ public class TestRunner {
     private static int failed = 0;
 
     public static void main(String[] args) {
-        System.out.println("============================");
-        System.out.println("  MediTrack — Test Runner  ");
-        System.out.println("============================\n");
+        System.out.println("MediTrack - Test Runner\n");
 
         testValidator();
         testIdGenerator();
@@ -36,9 +34,7 @@ public class TestRunner {
         testExceptions();
         testEnums();
 
-        System.out.println("\n============================");
-        System.out.printf("  Passed: %d | Failed: %d%n", passed, failed);
-        System.out.println("============================");
+        System.out.printf("%nPassed: %d | Failed: %d%n", passed, failed);
     }
 
     // ---- Validator ----
@@ -286,9 +282,7 @@ public class TestRunner {
         assertTrue("enum toString", Specialization.CARDIOLOGIST.toString().equals("Cardiology"));
     }
 
-    // =========================================================
-    //  Helpers
-    // =========================================================
+    // ----- helpers -----
 
     @FunctionalInterface interface Thunk { void run() throws Exception; }
 

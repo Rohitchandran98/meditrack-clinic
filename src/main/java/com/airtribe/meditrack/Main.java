@@ -26,9 +26,7 @@ public class Main {
 
     // Static block — app-level initialization
     static {
-        System.out.println("=========================================");
-        System.out.println("  " + Constants.APP_NAME + " v" + Constants.APP_VERSION);
-        System.out.println("=========================================");
+        System.out.println(Constants.APP_NAME + " v" + Constants.APP_VERSION);
         // Register a console observer for appointment events
         appointmentService.addObserver(new AppointmentService.AppointmentObserver() {
             public void onAppointmentCreated(Appointment a)   { /* already logged in service */ }
@@ -63,14 +61,12 @@ public class Main {
         sc.close();
     }
 
-    // =========================================================
-    //  MENUS
-    // =========================================================
+    // ----- menus -----
 
     private static void printMainMenu() {
         System.out.println("""
 
-                ===== MAIN MENU =====
+                Main Menu
                 1. Doctors
                 2. Patients
                 3. Appointments
@@ -491,9 +487,7 @@ public class Main {
         loadFromCSV();
     }
 
-    // =========================================================
-    //  SEED DATA
-    // =========================================================
+    // ----- seed data -----
 
     private static void seedSampleData() {
         System.out.println("[Main] Loading sample data...");
@@ -528,9 +522,7 @@ public class Main {
         System.out.println("[Main] Sample data ready.\n");
     }
 
-    // =========================================================
-    //  INPUT HELPERS
-    // =========================================================
+    // ----- input helpers -----
 
     private static int readInt() {
         try {
