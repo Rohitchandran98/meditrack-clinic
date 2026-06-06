@@ -1,0 +1,4 @@
+id,name,age,phone,email,bloodGroup,address,medicalHistory
+PAT1000,Rohit Sharma,28,9090909090,rohit@email.com,B+,Mumbai,Hypertension diagnosed 2022
+PAT1001,Sunita Patel,65,9191919191,sunita@email.com,O+,Delhi,
+PAT1002,Arjun Das,35,9292929292,arjun@email.com,A-,Bangalore,
