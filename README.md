@@ -1,8 +1,8 @@
 # MediTrack — Clinic & Appointment Management System
 
-MediTrack is a console-based clinic management system I built as part of the Airtribe Backend Java Track (Module 7). The goal was to apply Core Java concepts end-to-end — from basic OOP all the way to design patterns, file I/O, and Java 8 streams.
+MediTrack is a console-based clinic management system I built as part of the Airtribe Backend Java Track (Module 7). The goal was to apply Core Java concepts end-to-end , from basic OOP all the way to design patterns, file I/O, and Java 8 streams.
 
-It manages doctors, patients, appointments, and billing through a menu-driven CLI. No frameworks, no databases — just pure Java.
+It manages doctors, patients, appointments, and billing through a menu-driven CLI. No frameworks, no databases - just pure Java.
 
 ---
 
@@ -110,14 +110,14 @@ Expected result: `Passed: 48 | Failed: 0`
 ## Sample Output
 
 ```
-=========================================
+
   MediTrack v1.0.0
-=========================================
+
 [+] Doctor added: Dr. Anjali Sharma | Cardiology | Fee: ₹1500.00 | Available
 [+] Patient added: Rohit Sharma | Blood: B+ | Mumbai
 [NOTIFY] Appointment APT1000 created for Rohit Sharma with Dr. Anjali Sharma on 2026-03-09 10:00
 
-===== MAIN MENU =====
+ MAIN MENU 
 1. Doctors
 2. Patients
 3. Appointments
@@ -154,7 +154,7 @@ Patient ID to clone: PAT1000
 ### Billing
 
 ```
-====== BILL ======
+BILL 
 Bill ID    : BILL1000
 Type       : STANDARD
 Patient    : Rohit Sharma
@@ -165,7 +165,7 @@ Tax (18%): ₹270.00
 Discount   : ₹0.00
 TOTAL      : ₹1770.00
 Status     : UNPAID
-==================
+
 ```
 
 ---
