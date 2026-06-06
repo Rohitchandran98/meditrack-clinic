@@ -174,13 +174,13 @@ Status     : UNPAID
 
 All four optional bonus categories are covered:
 
-**A — File I/O & Persistence:** CSV save/load with `try-with-resources`; Java Serialization for binary format; `--loadData` command-line flag.
+**A - File I/O & Persistence:** CSV save/load with `try-with-resources`; Java Serialization for binary format; `--loadData` command-line flag.
 
-**B — Design Patterns:** Singleton (IdGenerator, eager + lazy), Strategy (4 billing strategies as lambdas), Observer (AppointmentObserver), Factory (BillSummary.from).
+**B - Design Patterns:** Singleton (IdGenerator, eager + lazy), Strategy (4 billing strategies as lambdas), Observer (AppointmentObserver), Factory (BillSummary.from).
 
-**C — AI Feature:** `AIHelper` does rule-based symptom matching to recommend doctors by specialization and auto-suggests appointment slots.
+**C - AI Feature:** `AIHelper` does rule-based symptom matching to recommend doctors by specialization and auto-suggests appointment slots.
 
-**D — Streams & Lambdas:** `DoctorService` computes average fee, groups by specialization, returns top doctors by fee; `AppointmentService` produces appointments-per-doctor analytics — all using streams.
+**D - Streams & Lambdas:** `DoctorService` computes average fee, groups by specialization, returns top doctors by fee; `AppointmentService` produces appointments-per-doctor analytics — all using streams.
 
 ---
 
