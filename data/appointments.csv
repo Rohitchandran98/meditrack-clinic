@@ -1,0 +1,3 @@
+appointmentId,patientId,doctorId,dateTime,status,notes
+APT1000,PAT1000,DOC1000,2026-03-09 10:00,CONFIRMED,Regular checkup
+APT1001,PAT1001,DOC1002,2026-03-09 12:00,CONFIRMED,Headache follow-up

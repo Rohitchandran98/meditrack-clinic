@@ -1,0 +1,5 @@
+id,name,age,phone,email,specialization,consultationFee,isAvailable
+DOC1000,Anjali Sharma,42,9876543210,anjali@hospital.com,CARDIOLOGIST,1500.0,true
+DOC1001,Ravi Kumar,38,9123456780,ravi@hospital.com,DERMATOLOGIST,1000.0,true
+DOC1002,Priya Nair,50,9988776655,priya@hospital.com,NEUROLOGIST,1800.0,true
+DOC1003,Mohan Verma,45,9871234560,mohan@hospital.com,GENERAL_PHYSICIAN,500.0,true
